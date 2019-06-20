@@ -103,12 +103,28 @@ Player.prototype.handleInput = function(key) {
         if (score == 3) {
           Swal.fire({
             title: 'Congratulations!!',
-            text: 'you have completed this level',
+            text: 'you have completed this level - 1',
+            confirmButtonText: 'Continue'
+          })
+        } else if (score==6){
+        Swal.fire({
+            title: 'Congratulations!!',
+            text: 'you have completed this level - 2',
+            confirmButtonText: 'Continue'
+          })
+        } else if (score==9){
+         Swal.fire({
+            title: 'Congratulations!!',
+            text: 'you have completed this level - 3',
+            confirmButtonText: 'Continue'
+          })
+        } else {
+         Swal.fire({
+            title: 'Congratulations!!',
+            text: 'you have completed all the levels',
             confirmButtonText: 'Continue'
           })
         }
-
-
         scoreArea.innerHTML = score;
         setTimeout(() => {
           this.x = 200;
