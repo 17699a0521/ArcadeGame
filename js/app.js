@@ -104,7 +104,7 @@ Player.prototype.handleInput = function(key) {
           Swal.fire({
             title: 'Congratulations!!',
             text: 'you have completed this level',
-            confirmButtonText: 'restart'
+            confirmButtonText: 'Continue'
           })
         }
 
