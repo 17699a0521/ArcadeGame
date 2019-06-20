@@ -105,10 +105,7 @@ Player.prototype.handleInput = function(key) {
             title: 'Congratulations!!',
             text: 'you have completed this level',
             confirmButtonText: 'restart'
-          }).then(function() {
-            window.location.reload();
-          });
-
+          })
         }
 
 
