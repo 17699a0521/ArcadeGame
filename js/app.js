@@ -29,8 +29,8 @@ Enemy.prototype.update = function(dt) {
   // console.log(player.x);
   if (player.x < this.x + 60 && player.x + 60 > this.x && player.y < this.y + 60 && player.y + 60 > this.y) {
     Swal.fire({
-      title: 'Congratulations!!',
-      text: 'you have completed this level',
+      title: 'Oh...! Hoo',
+      text: 'you were died',
       confirmButtonText: 'restart'
     }).then(function() {
       window.location.reload();
