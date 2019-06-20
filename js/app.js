@@ -118,7 +118,7 @@ Player.prototype.handleInput = function(key) {
             text: 'you have completed this level - 3',
             confirmButtonText: 'Continue'
           })
-        } else {
+        } else if(score>9){
           this.sprite="images/char-princess-girl.png";
          Swal.fire({
             title: 'Congratulations!!',
