@@ -99,26 +99,27 @@ Player.prototype.handleInput = function(key) {
         score = score + 1;
         if (score == 3) {
           this.sprite = "images/char-boy.png";
-        }
-        if (score == 3) {
           Swal.fire({
             title: 'Congratulations!!',
             text: 'you have completed this level - 1',
             confirmButtonText: 'Continue'
           })
         } else if (score==6){
+          this.sprite = "images/char-horn-girl.png";
         Swal.fire({
             title: 'Congratulations!!',
             text: 'you have completed this level - 2',
             confirmButtonText: 'Continue'
           })
         } else if (score==9){
+          this.sprite="images/char-cat-girl.png";
          Swal.fire({
             title: 'Congratulations!!',
             text: 'you have completed this level - 3',
             confirmButtonText: 'Continue'
           })
         } else {
+          this.sprite="images/char-princess-girl.png";
          Swal.fire({
             title: 'Congratulations!!',
             text: 'you have completed all the levels',
