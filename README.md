@@ -40,3 +40,10 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 
 + When clicked on continue button, the game will continue to next level.
 + If the player touches the bugs, a message will be shown with a button, If the button got clicked, the game will be restarted and the player started from initial position.
+
+## How to play the game ?
++ Open root file (`index.html`) in any of your favorite browser.
++ Move the player on the canvas using arrow keys on keyboard.
++ Make the player to touch the water area without touching the bugs.
++ If the player touches the bug, the game will end with a pop up message.
++ Baesed on levels the background color and symbol colors also.
