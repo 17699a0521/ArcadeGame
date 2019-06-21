@@ -1,5 +1,6 @@
 let score = 0;
 let scoreArea = document.getElementById("score");
+var body=document.getElementById("body");
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
   // Variables applied to each of our instances go here,
@@ -98,6 +99,7 @@ Player.prototype.handleInput = function(key) {
       if (this.y < 60) {
         score = score + 1;
         if (score == 3) {
+          body.style.background="#d9f586";
           this.sprite = "images/char-boy.png";
           Swal.fire({
             title: 'Congratulations!!',
@@ -105,6 +107,7 @@ Player.prototype.handleInput = function(key) {
             confirmButtonText: 'Continue'
           })
         } else if (score==6){
+          body.style.background="#ebf1fb";
           this.sprite = "images/char-horn-girl.png";
         Swal.fire({
             title: 'Congratulations!!',
@@ -112,13 +115,15 @@ Player.prototype.handleInput = function(key) {
             confirmButtonText: 'Continue'
           })
         } else if (score==9){
+          body.style.background="#f7e4f5";
           this.sprite="images/char-cat-girl.png";
          Swal.fire({
             title: 'Congratulations!!',
             text: 'you have completed this level - 3',
             confirmButtonText: 'Continue'
           })
-        } else if(score>9){
+        } else if(score>12){
+          body.style.background="#f4f6f6";
           this.sprite="images/char-princess-girl.png";
          Swal.fire({
             title: 'Congratulations!!',
@@ -126,7 +131,6 @@ Player.prototype.handleInput = function(key) {
             confirmButtonText: 'Continue'
           })
         }
-        scoreArea.innerHTML = score;
         setTimeout(() => {
           this.x = 200;
           this.y = 400;
