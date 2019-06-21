@@ -1,3 +1,8 @@
 body {
     text-align: center;
 }
+
+.heart{
+color: #da5bac;
+text-shadow: 2px 2px 2px #000;
+}
