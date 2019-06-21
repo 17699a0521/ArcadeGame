@@ -2,6 +2,7 @@ let score = 0;
 let scoreArea = document.getElementById("score");
 var body=document.getElementById("body");
 var heart=[...document.querySelectorAll("fa-heart")];
+console.log(heart);
 // body.onload=function(){
 
 // }
