@@ -33,10 +33,10 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 +   I declared score as `score`  for counting the score of the game. Initially I declared both `score` to zero.
 +   And I used bugs as enemies using array and gave some speed and positions, and if actor touches then bugs to show a `sweetalert` and again comes to the initial position.
 +  I increased score value by 1 when player reaches the top water level and maintained break points also. The break points are listed below.
-  - `if (score==3)` - level-1
-  - `if (score==6)` - level-2
-  - `if (score==9)` - level-3
-  - `else` ( morethan 9) - level 4
+  - `if (score==3)` - level-1 ( Displaying heart symbol instead of score along with backgroud change)
+  - `if (score==6)` - level-2 ( Displaying heart symbol instead of score along with backgroud change)
+  - `if (score==9)` - level-3 ( Displaying heart symbol instead of score along with backgroud change)
+  - `else( score==12 )` - level 4 ( Displaying heart symbol instead of score along with backgroud change)
 
 + When clicked on continue button, the game will continue to next level.
 + If the player touches the bugs, a message will be shown with a button, If the button got clicked, the game will be restarted and the player started from initial position.
